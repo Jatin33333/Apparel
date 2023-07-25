@@ -1,0 +1,585 @@
+* {margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;}
+   
+:root {--main-color:#443e31;}  
+
+h1 {font-size:50px;}
+
+h2 {font-size:30px;}
+
+p {font-size:20px;}
+
+i {font-size:30px;}
+
+a {text-decoration: none;}
+
+#slide {min-height:100vh;}
+
+body {background:url(images/main.png);
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position:center;
+    }
+.change{
+        background:var(--main-color);
+        transition:all 1s ease;
+}
+
+.add{background:var(--main-color);}
+nav {float:left;
+    flex:2;}
+
+#hamburger {display: none;
+            padding-left:10px;
+            float:left;}
+
+header > section {float:left;
+                }
+
+#header_for_mobile {position: fixed;
+                    top:0px;
+                    display: none;
+                    width:100%;
+                }
+#hb {width:20%;
+    float:left;
+    padding-top:10px;}
+#logo_1 {
+        width:50%;
+        float:left;}
+
+#logo {cursor:pointer;
+    padding-left:10px;
+    float:left;
+    }
+
+header { width:100%;
+        transition: all 0.5s ease;
+        display: flex;}
+
+nav {padding-top:10px;
+    text-align: center;}
+
+nav a {text-decoration: none;
+        font-size:20px;
+    color:white;
+    margin-left: 20px;
+    }
+
+#search input {border-radius:50px;
+                border:2px solid white;
+            background:none;
+            height:25px;
+            width:250px;
+        color:white;}
+
+#search {text-align:right;
+        padding-top:10px;
+        flex:1;}
+
+#search input::placeholder{color:white;}
+
+#signup {text-align:center;
+        flex:1;}
+
+#signup a {color:var(--main-color);
+            font-size:20px;
+        text-align: none;
+        background-color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        display: inline-block;
+        padding:10px 20px;
+        border:2px solid white;}
+
+#signup a:hover {background:none;
+                color:white;
+            border:2px solid white;}
+
+#heading1 {width:70%;
+        margin:0 auto;
+        padding-top:150px;
+        padding-bottom:150px;
+        text-align: center;
+        align-self:center;
+        color:white;
+    }
+
+#block_1 {display:flex;
+    flex-direction: column;
+    padding-top:30px;
+    display:flow-root;
+}
+
+#block_2 {width:100%;
+        height:auto;
+     
+    background-color: white;
+    text-align:center;
+}
+
+#heading_2 {text-align:center;
+            padding-top:30px;}
+
+#brands {width:100%;
+        height:auto;
+        background-color: white;;
+        margin:50px auto 0px;
+    display:flex;
+    justify-content:space-around;
+flex-wrap: wrap;
+padding-bottom:50px;}
+
+#brands > section {margin-top:20px;
+                    margin-left:10px;}
+
+#brand_1 {width:200px;
+
+        float:left;
+    text-align:center;}
+
+
+#brand_1 a {display:inline-block;
+            padding:10px;
+            border-radius:50px;
+            border:1px solid black;
+            text-decoration:none;
+            font-size:20px;
+            color:black;
+        margin-top:20px;}
+
+#brand_1 a:hover {background:var(--main-color);
+                color:white;
+            border:none;}
+            
+
+#brand_2 {width:200px;
+text-align:center;
+padding-top: 70px;;
+float:left;
+
+}
+
+#brand_2 a {display:inline-block;
+        padding:10px;
+        border-radius:50px;
+        border:1px solid black;
+        text-decoration:none;
+        font-size:20px;
+        color:black;
+    margin-top:20px;}
+
+#brand_2 a:hover {background:var(--main-color);
+            color:white;
+            border:none;}
+
+#brand_3 {width:200px;
+text-align:center;
+float:left;
+
+padding-top:55px;
+}
+
+#brand_3 a {display:inline-block;
+        padding:10px;
+        border-radius:50px;
+        border:1px solid black;
+        text-decoration:none;
+        font-size:20px;
+        color:black;
+    margin-top:20px;}
+
+#brand_3 a:hover {background:var(--main-color);
+            color:white;
+        border:none;}
+
+    #brand_4 {width:200px;
+    text-align:center;
+    float:left;
+
+
+}
+
+#brand_4 a {display:inline-block;
+            padding:10px;
+            border-radius:50px;
+            border:1px solid black;
+            text-decoration:none;
+            font-size:20px;
+            color:black;
+        margin-top:20px;}
+
+#brand_4 a:hover {background:var(--main-color);
+                color:white;
+            border:1px solid var(--main-color);}
+
+#btn a {text-decoration:none;
+        color:white;
+        border:1px solid var(--main-color);
+        background-color:var(--main-color);
+        display: inline-block;
+        padding:10px;
+        border-radius:50px;
+        }
+#btn a:hover{color:black;
+            border:1px solid black;
+            background:none;}
+
+#block_3 {
+        width:auto;
+        height:auto;
+        background-color: white;
+        text-align:center;
+    padding-top:80px;}
+    
+/*swipper*/
+
+.swiper {
+    width: 100%;
+    height:auto;
+  }
+
+  .swiper-slide {
+    width:100%;
+    height:60%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height:10%;
+    object-fit:contain;
+  }
+
+/*swipper*/
+
+#block_4 {width:100%;
+        height:auto;
+        
+        display: flow-root;
+        background-color: white;
+    }
+#gallery {text-align:center;
+        }
+
+#outerwear {width:425px;
+            height:630px;
+            background-color: white;
+        float:left;}
+
+#kids {width:413px;
+    padding:20px;
+    float:left;}
+
+    #shoes {width:413px;
+        padding:20px;
+        float:left;}
+
+
+
+#special {width:60%;
+        font-size:50px;
+        float:right;
+        text-align:center;
+        padding-top:50px;
+       
+       }
+#outerwear1 {display:none;}
+
+#btn1 {text-align:center;
+    width:100%;
+clear:both;
+padding-top:50px;
+}
+
+#btn1 a {text-decoration:none;
+        color:white;
+        background:var(--main-color);
+        display:inline-block;
+        padding:10px;
+        border-radius:50px;
+        border:1px solid var(--main-color);
+        }
+#btn1 a:hover {color:black;
+                background:none;
+                border:1px solid black;
+                }
+
+#block_5 {background:white;
+       
+        padding-top:100px;
+        display:flow-root;
+        width:100%;}
+
+#choose_image {width:30%;
+                float:left;
+            padding-left:10px;
+       }
+
+#choose_image img {width:100%;}
+
+#choose_us {width:70%;
+            float:left;
+            padding:50px;}
+    
+#block_6 {width:100%;
+      
+        padding-top:100px;
+        display:flow-root;
+        background:white;}
+
+#our_client {text-align:center;}
+
+#clients {display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;}
+
+#one {width:30%;
+    min-width:300px;
+    border:2px solid black;
+    text-align:center;
+    padding:20px;
+    border-radius:50px;
+    float:left;}
+
+    #two {width:30%;
+        min-width:300px;
+        border:2px solid black;
+        text-align:center;
+        padding:20px;
+        border-radius:50px;
+        float:left;}
+
+        #three {width:30%;
+            min-width:300px;
+            border:2px solid black;
+            text-align:center;
+            padding:20px;
+            border-radius:50px;
+            float:left;}
+
+#btn2 {text-align:center;
+    padding-top:20px;}
+
+#btn2 a {display:inline-block;
+        text-decoration:none;
+        color:white;
+        background:var(--main-color);
+        border-radius:50px;
+        border:1px solid var(--main-color);
+        padding:10px;}
+
+#btn2 a:hover {color:black;
+                background: none;
+            border:1px solid black;}
+
+#block_7 {width:100%;
+        
+        background:white;
+        text-align:center;
+        padding-top:100px;
+        padding-bottom:100px;}
+#subscribe {padding:50px 200px;}
+#block_7 input {width:80%;
+                min-width:300px;
+                height:40px;}
+
+#block_7 a {text-decoration:none;
+            color:white;
+            background:var(--main-color);
+            padding:11px 20px 11px;
+            border:1px solid var(--main-color);
+            display: inline-block;}
+
+#block_7 a:hover {color:black;
+                background:none;
+                border:1px solid black;}
+
+footer {width:100%;
+        
+        height:auto;
+        display:flow-root;
+        background:var(--main-color);
+        color:white;
+        text-align:center;
+        }
+
+#f_1 {width:25%;
+    float:left;
+    min-width:300px;
+    padding:20px;
+    }
+#f_2 {width:25%;
+    float:left;
+    min-width:300px;
+    padding:20px;
+    }
+
+#f_3 {width:25%;
+    float:left;
+    min-width:300px;
+    padding:20px;
+    }
+
+#f_4 {width:25%;
+    float:left;
+        min-width:300px;
+        padding:20px;
+        }
+footer a {text-decoration:none;
+        color:white;
+        font-size:20px;
+        }
+footer p {font-size:15px;}
+footer span a{font-size:15px;}
+footer a i {margin:10px;}
+
+/*slide*/
+
+#slide{display:none;
+        width:100%;
+       
+        background-color:white;
+        color:black;
+        text-align:center;
+        padding-top:80px;
+        }
+
+#slide a {display:block;
+        text-decoration:none;
+        color:black;
+        font-size:20px;
+        padding:20px;
+        border:1px solid white;
+        }
+
+#slide a:hover {border:1px solid black;}
+/*slide*/
+
+#close {display:none;
+        padding-left:10px;}
+
+#logo_in_slider {background:var(--main-color);}
+
+/*media query*/
+@media screen and (max-width:600px){
+    h1 {font-size:30px;}
+    p {font-size:18px;}
+    header{flex-direction: column;
+            }
+    #search {text-align: center;
+            margin-top:30px;}
+    #heading1 {width:100%;
+                padding:50px 10px 50px 10px;}
+    #hamburger {display:block;}
+    #signup {padding-top:20px;}
+    nav a {display:none;}
+    nav {display:none;}
+    #logo {display:none;}
+    #logo_1 {display:block;}
+    #header_for_mobile{display: block;
+                    z-index:11;
+                    }
+    #brand_2 {margin-right:30px;}
+    #brand_3 {margin-right:30px;}
+    #brand_1 {margin-right:30px;}
+    #brand_4 {margin-right:30px;}
+    #outerwear {display:none;}
+    #kids{width:100%;
+        text-align: center;}
+    #shoes{width:100%;
+            text-align: center;}
+    #kids img {width:100%;
+                 object-fit: cover;}
+    #shoes img {width:100%;
+                object-fit:cover;}
+    #outerwear1 {display: block;
+                padding:20px;}
+    #outerwear1 img {width:100%;
+                    object-fit: cover;}
+    #special {width:100%;
+        font-size:30px;
+        padding-top:0;
+        text-align: center;}
+
+    #btn1 {padding-top:10px;}
+        #block_4 {margin-top:0;
+               }
+    #choose_image {width:100%;
+                    padding:10px;}
+    #choose_us {width:100%;
+                padding:10px;}
+
+    #block_5 {padding-top:50px;}
+    #two {display:none;}
+    #three {display:none;}
+    #subscribe {padding:20px;}
+    #f_1 {width:100%;
+        min-width:0;}
+    #f_2 {width:100%;
+        min-width:0;}
+    #f_3 {width:100%;
+        min-width:0;}
+    #f_4 {width:100%;
+        min-width:0;}
+}
+@media screen and (min-width:600px){
+    header{flex-direction: column;}
+                #search {text-align: center;}
+                #signup {padding-top:20px;}
+                #brand_2 {margin-right:10px;}
+                 #brand_3 {margin-right:30px;}
+                 nav {text-align:left;}
+                 #two {display:none;}
+                 #three {display:none;}
+#outerwear   {text-align:center;
+            width:100%;}
+#kids {text-align:center;
+    width:100%;}
+#shoes {text-align:center;
+        width:100%;}
+
+#special {width:100%;
+        text-align: center;}
+        #block_4 {margin-top:0px;
+           }
+#subscribe {padding:30px;}
+#slide {display: none!important;}
+#close {display: none!important;}
+#search{display: block!important;}
+#signup{display:block!important;}
+#wrapper{display:block!important;}
+}
+@media screen and (min-width:768px){
+    #block_4 {margin-top:0;
+        }
+        #two {display:block;}
+        #subscribe {padding:50px 100px;}
+}
+@media screen and (min-width:992px){
+    #brand_2 {margin-right:0px;}
+    #brand_3 {margin-right:0px;}
+    #block_4 {margin-top:00px;
+        }
+    #three {display:block;}
+    #subscribe {padding:50px 200px;}
+    #block_1 {min-height:0;}
+}
+@media screen and (min-width:1200px){
+    header{flex-direction:row;}
+                #search {text-align: right;}
+                #signup {padding-top:0px;}
+                nav {text-align:center;}
+                #outerwear {width:425px;}
+                #kids {width:413px;}
+                #shoes {width:413px;
+                        padding-right:0;
+                        margin-right:10px;}
+                        #special {width:20%;
+                                text-align:left;}   
+
+}
+ /*media query*/
